@@ -1,13 +1,17 @@
-    # First-push families for ocaml-stakeholder
+# First-push families for ocaml-stakeholder
 
-    - `code_analyzer`: pending first-push traceability row for ocaml-stakeholder.
-- `data_processing`: pending first-push traceability row for ocaml-stakeholder.
-- `jargon`: pending first-push traceability row for ocaml-stakeholder.
-- `metrics`: pending first-push traceability row for ocaml-stakeholder.
-- `network_activity`: pending first-push traceability row for ocaml-stakeholder.
-- `system_monitoring`: pending first-push traceability row for ocaml-stakeholder.
-- `agent_workflows`: pending first-push traceability row for ocaml-stakeholder.
-- `platform_engineering`: pending first-push traceability row for ocaml-stakeholder.
-- `observability_ai_runtime`: pending first-push traceability row for ocaml-stakeholder.
-- `delivery_preview_ops`: pending first-push traceability row for ocaml-stakeholder.
-- `supply_chain_security`: pending first-push traceability row for ocaml-stakeholder.
+- `code_analyzer`: implemented with `src/catalog.ml`, `src/json.ml`, `src/runtime.ml`, `bin/main.ml`, and `test/runtime_test.ml` as dedicated classic-six.
+- `data_processing`: implemented with `src/catalog.ml`, `src/json.ml`, `src/runtime.ml`, `bin/main.ml`, and `test/runtime_test.ml` as dedicated classic-six.
+- `jargon`: implemented with `src/catalog.ml`, `src/json.ml`, `src/runtime.ml`, `bin/main.ml`, and `test/runtime_test.ml` as dedicated classic-six.
+- `metrics`: implemented with `src/catalog.ml`, `src/json.ml`, `src/runtime.ml`, `bin/main.ml`, and `test/runtime_test.ml` as dedicated classic-six.
+- `network_activity`: implemented with `src/catalog.ml`, `src/json.ml`, `src/runtime.ml`, `bin/main.ml`, and `test/runtime_test.ml` as dedicated classic-six.
+- `system_monitoring`: implemented with `src/catalog.ml`, `src/json.ml`, `src/runtime.ml`, `bin/main.ml`, and `test/runtime_test.ml` as dedicated classic-six.
+- `agent_workflows`: implemented with `src/catalog.ml`, `src/json.ml`, `src/runtime.ml`, `bin/main.ml`, and `test/runtime_test.ml` as dedicated modern-core.
+- `platform_engineering`: implemented with `src/catalog.ml`, `src/json.ml`, `src/runtime.ml`, `bin/main.ml`, and `test/runtime_test.ml` as dedicated modern-core.
+- `observability_ai_runtime`: implemented with `src/catalog.ml`, `src/json.ml`, `src/runtime.ml`, `bin/main.ml`, and `test/runtime_test.ml` as dedicated modern-core.
+- `delivery_preview_ops`: implemented with `src/catalog.ml`, `src/json.ml`, `src/runtime.ml`, `bin/main.ml`, and `test/runtime_test.ml` as dedicated modern-core.
+- `supply_chain_security`: implemented with `src/catalog.ml`, `src/json.ml`, `src/runtime.ml`, `bin/main.ml`, and `test/runtime_test.ml` as dedicated modern-core.
+- `ai_governance`: implemented with `src/catalog.ml`, `src/json.ml`, `src/runtime.ml`, `bin/main.ml`, and `test/runtime_test.ml` as grouped fallback.
+- `security_blockchain`: implemented with `src/catalog.ml`, `src/json.ml`, `src/runtime.ml`, `bin/main.ml`, and `test/runtime_test.ml` as grouped fallback.
+- `health_protocol`: implemented with `src/catalog.ml`, `src/json.ml`, `src/runtime.ml`, `bin/main.ml`, and `test/runtime_test.ml` as grouped fallback.
+- `overlay_quantum`: implemented with `src/catalog.ml`, `src/json.ml`, `src/runtime.ml`, `bin/main.ml`, and `test/runtime_test.ml` as grouped fallback.

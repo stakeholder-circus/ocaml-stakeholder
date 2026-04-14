@@ -12,8 +12,8 @@ permissions:
   contents: read
 
 jobs:
-  actionlint:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: rhysd/actionlint@v1
+      - uses: reviewdog/actionlint@v1

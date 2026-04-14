@@ -1,9 +1,5 @@
 # OCaml Gaps
 
-- `ocaml-stakeholder.foundation-pending`: deterministic scaffold-only baseline exists, but runtime foundation has not started.
-- `ocaml-stakeholder.classic-six-pending`: the six dedicated baseline families are not implemented yet.
-- `ocaml-stakeholder.modern-core-pending`: the modern-core families are not implemented yet.
-- `ocaml-stakeholder.post-modern-core-pending`: later families remain grouped fallback work.
-- `ocaml-stakeholder.traceability-rows-pending`: first-push traceability rows are not populated yet.
-- `ocaml-stakeholder.codeql-activation-pending`: enable only if the language is supported after publication.
-- `ocaml-stakeholder.flake-lock-pending`: generate `flake.lock` once the scaffold baseline is stable.
+- `ocaml-stakeholder.live-provider-rollout-pending`: full live-provider/runtime support is not started yet.
+- `ocaml-stakeholder.publication-pending`: the publication/governance wave is still blocked on remote access.
+- `ocaml-stakeholder.second-pass-provider-wave-pending`: provider integrations will be added in the second-pass wave.

@@ -8,11 +8,14 @@ permissions:
   contents: read
 
 jobs:
-  scaffold:
+  build-and-test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: ocaml/setup-ocaml@v3
         with:
-          python-version: "3.12"
-      - run: python3 scripts/validate_scaffold.py
+          ocaml-compiler: '5.2'
+          dune-cache: true
+      - run: opam install -y dune ocamlformat
+      - run: opam exec -- dune build @all
+      - run: opam exec -- dune runtest

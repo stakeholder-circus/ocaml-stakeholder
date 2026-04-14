@@ -1,28 +1,35 @@
 > [!WARNING]
-> This repository is AI-assisted and manually reviewed. It is currently a local-only scaffold in the next-20 autonomous sprint.
+> This repository is AI-assisted and manually reviewed. It now contains the deterministic first tranche for the OCaml rewrite wave.
 
 # ocaml-stakeholder
 
-OCaml scaffold under stakeholder-circus.
+OCaml deterministic tranche under stakeholder-circus.
 
 ## Status
-- Selected for the next-20 autonomous sprint.
-- Local-only scaffold; no upstream tracking and no publication yet.
+- First deterministic tranche implemented locally.
+- Local-only scaffold policy remains in force; no upstream tracking and no publication yet.
 - Default branch remains `main`; active work happens on the repo-specific baseline branch.
 
 ## Role
 - Deterministic full-parity target for the next-20 wave.
-- First tranche target is `classic-six + modern-core` with grouped fallback for later families.
+- Tranche 1 is `classic-six + modern-core` with grouped fallback for later families.
 - Full live-provider/runtime support remains a required follow-on wave.
+
+## CLI contract
+- `--list-values`
+- `--family <name|classic-six|modern-core|later-fallback>`
+- `--seed <int>`
+- `--output-format json`
+- `--experimental-provider <name>` fails fast
 
 ## Planned toolchain contract
 - Toolchain source: `built-in`
-- See [docs/toolchain.md](docs/toolchain.md) for exact prep commands.
+- See [docs/toolchain.md](docs/toolchain.md) for exact native and Docker commands.
 
 ## Current guardrail
 - Missing behavior must fail fast and be recorded in `GAPS.md`.
-- The scaffold baseline is authoritative until implementation starts.
-- Use opam-managed tooling; ocamlformat is available via opam exec.
+- No placeholder runtime behavior remains in the deterministic tranche.
+- Full live-provider/runtime support is deferred to the second-pass provider rollout wave.
 
 ## Documentation
 - [STATUS.md](STATUS.md)

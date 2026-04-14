@@ -1,0 +1,5 @@
+(library
+ (name ocaml_stakeholder)
+ (public_name ocaml-stakeholder)
+ (wrapped false)
+ (modules catalog json runtime))

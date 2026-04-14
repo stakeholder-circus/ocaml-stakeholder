@@ -1,0 +1,16 @@
+opam-version: "2.0"
+name: "ocaml-stakeholder"
+version: "0.1.0"
+maintainer: "davidsupan"
+authors: "davidsupan"
+license: "MIT"
+homepage: "https://github.com/stakeholder-circus/ocaml-stakeholder"
+bug-reports: "https://github.com/stakeholder-circus/ocaml-stakeholder/issues"
+dev-repo: "git@github.com:stakeholder-circus/ocaml-stakeholder.git"
+depends: [
+  "ocaml" {>= "5.0"}
+  "dune" {>= "3.14"}
+]
+build: [
+  ["dune" "build" "-p" name "-j" jobs]
+]

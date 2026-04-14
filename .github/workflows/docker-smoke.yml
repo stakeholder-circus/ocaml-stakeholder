@@ -4,10 +4,21 @@ on:
   push:
   pull_request:
 
+permissions:
+  contents: read
+
 jobs:
-  docker-smoke:
+  smoke:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - run: docker build -t ocaml-stakeholder .
-      - run: docker run --rm ocaml-stakeholder
+      - run: docker run --rm ocaml-stakeholder --list-values
+      - run: docker run --rm ocaml-stakeholder --seed 7 --family classic-six
+      - run: docker run --rm ocaml-stakeholder --seed 7 --family modern-core
+      - run: docker run --rm ocaml-stakeholder --seed 7 --family later-fallback
+      - run: |
+          if docker run --rm ocaml-stakeholder --experimental-provider openai; then
+            echo "expected experimental-provider fail-fast" >&2
+            exit 1
+          fi

@@ -1,16 +1,20 @@
-  # OCaml Toolchain
+# OCaml Toolchain
 
-  - State: scaffold-only next-20 prep
-  - Toolchain source: `built-in`
+- State: deterministic first tranche implemented
+- Toolchain source: `built-in`
 
-  ## Planned commands after promotion
-    - `ocaml -version`
+## Native commands
+- `ocaml -version`
 - `dune --version`
 - `opam exec -- ocamlformat --version`
+- `opam exec -- ocamlformat --check src/catalog.ml src/json.ml src/runtime.ml bin/main.ml test/runtime_test.ml`
+- `dune build @all`
+- `dune runtest`
 
-  ## Scaffold-time checks
-  - `python3 scripts/validate_scaffold.py`
-  - `/nix/var/nix/profiles/default/bin/nix --extra-experimental-features 'nix-command flakes' flake lock`
-
-  ## Current limitation
-  - Use opam-managed tooling; ocamlformat is available via opam exec.
+## Docker commands
+- `docker build -t ocaml-stakeholder .`
+- `docker run --rm ocaml-stakeholder --list-values`
+- `docker run --rm ocaml-stakeholder --seed 7 --family classic-six`
+- `docker run --rm ocaml-stakeholder --seed 7 --family modern-core`
+- `docker run --rm ocaml-stakeholder --seed 7 --family later-fallback`
+- `docker run --rm ocaml-stakeholder --experimental-provider openai`

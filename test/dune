@@ -1,0 +1,4 @@
+(test
+ (name runtime_test)
+ (modules runtime_test)
+ (libraries ocaml_stakeholder))
