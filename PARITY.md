@@ -1,23 +1,15 @@
-# Parity
+# OCaml Parity
 
-## Role
+- Role: local-only full-parity target in the next-20 wave
+- Parity class: full-parity
 
-Compiler-style pragmatic FP scaffold.
-
-## Parity class
-
-- scaffold-target
-
-## Method and Review Model
-
-- Codex-assisted
-- Manually reviewed
-- Human in the loop
-- Derived from giacomo-b/rust-stakeholder where applicable
-- Missing behavior must fail fast and be recorded explicitly in GAPS.md
+## Review model
+- Rust remains the canonical source-of-truth.
+- `stakeholder-core` remains the behavioral contract.
+- This repo is deterministic-first for the initial tranche.
 
 ## Promotion prerequisites
-
-- Land exhaustive event/family matching, deterministic scheduler behavior, and fixture parity.
-- Preserve deterministic normalized JSON and the shared CLI contract from stakeholder-core.
-- Keep provenance and attribution explicit as implementation depth is added.
+- Deterministic `classic-six + modern-core` implemented.
+- Native and Docker validation green.
+- `--list-values`, deterministic same-seed JSON, and experimental-provider fail-fast present.
+- Publication/governance wave complete and remote access available.

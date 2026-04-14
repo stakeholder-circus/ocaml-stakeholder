@@ -1,11 +1,14 @@
-# ocaml-stakeholder AGENTS
+    # ocaml-stakeholder AGENTS
 
-1. Preserve imported Rust history and explicit provenance docs; do not present this repo as greenfield work.
-2. This repo is scaffold-only until promoted from the matrix queue.
-3. Planned commands after promotion:
-   - `ocamlformat --check .`
-   - `dune build`
-   - `dune runtest`
-4. Keep `origin` intended for `stakeholder-circus/ocaml-stakeholder` and `upstream` pointed at `https://github.com/giacomo-b/rust-stakeholder`.
-5. Promotion work starts with deterministic normalized JSON, explicit fail-fast gaps, and traceability rows back to Rust and stakeholder-core.
-6. Do not hide missing behavior behind placeholders; record it in `GAPS.md` instead.
+    - Preserve imported Rust history and provenance.
+    - Queue state: `scaffold-only` in the next-20 autonomous sprint.
+    - Origin: `git@github.com:stakeholder-circus/ocaml-stakeholder.git`
+    - Upstream: `https://github.com/giacomo-b/rust-stakeholder`
+    - Deterministic normalized JSON is the first implementation target.
+    - Missing behavior must fail fast and be recorded in `GAPS.md`.
+    - No placeholder runtime behavior once implementation starts.
+
+    ## Planned promotion commands
+    - `ocaml -version`
+- `dune --version`
+- `opam exec -- ocamlformat --version`

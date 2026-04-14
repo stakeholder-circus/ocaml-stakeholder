@@ -1,8 +1,6 @@
-# Remotes
-
-- Local path: /Users/davidsupan/shareholder/ocaml-stakeholder
-- Default branch: main
-- Origin: git@github.com:stakeholder-circus/ocaml-stakeholder.git
-- Upstream: https://github.com/giacomo-b/rust-stakeholder
-- Role: Compiler-style pragmatic FP scaffold.
-- Provenance model: imported upstream Rust history plus explicit Codex/manual-review disclosure and derivative-work documentation.
+- Local path: `/Users/davidsupan/shareholder/ocaml-stakeholder`
+- Default branch: `main`
+- Origin: `git@github.com:stakeholder-circus/ocaml-stakeholder.git`
+- Upstream: `https://github.com/giacomo-b/rust-stakeholder`
+- Role: local-only next-20 scaffold
+- Provenance model: imported Rust history retained with derivative scaffold content layered on top

@@ -1,15 +1,16 @@
-# Toolchain contract
+  # OCaml Toolchain
 
-This repository is currently scaffold-only.
+  - State: scaffold-only next-20 prep
+  - Toolchain source: `built-in`
 
-## Planned commands after promotion
-- `ocamlformat --check .`
-- `dune build`
-- `dune runtest`
+  ## Planned commands after promotion
+    - `ocaml -version`
+- `dune --version`
+- `opam exec -- ocamlformat --version`
 
-## Scaffold-time checks
-- `python3 scripts/validate_scaffold.py`
-- `nix run .#check` once Nix is available locally
+  ## Scaffold-time checks
+  - `python3 scripts/validate_scaffold.py`
+  - `/nix/var/nix/profiles/default/bin/nix --extra-experimental-features 'nix-command flakes' flake lock`
 
-## Current limitation
-- `flake.lock` has not been generated locally because `nix` is not installed in the current environment.
+  ## Current limitation
+  - Use opam-managed tooling; ocamlformat is available via opam exec.

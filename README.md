@@ -1,32 +1,34 @@
-> [!IMPORTANT]
-> This repository is part of a Codex-assisted rewrite experiment. All changes are manually reviewed, a human remains in the loop, and missing behavior is tracked explicitly rather than hidden. The project exists for fun, research, language learning, AI agent workflow/planning, interop experiments, and code review testing.
+> [!WARNING]
+> This repository is AI-assisted and manually reviewed. It is currently a local-only scaffold in the next-20 autonomous sprint.
+
 # ocaml-stakeholder
 
-OCaml scaffold under `stakeholder-circus`.
+OCaml scaffold under stakeholder-circus.
 
 ## Status
-- Scaffold-only repository.
-- Imported Rust history is preserved for attribution and auditability.
-- Governance, provenance, hook, and CI baselines are in place.
-- No parity-depth claims are made until this repo is explicitly promoted from the scaffold queue.
+- Selected for the next-20 autonomous sprint.
+- Local-only scaffold; no upstream tracking and no publication yet.
+- Default branch remains `main`; active work happens on the repo-specific baseline branch.
 
 ## Role
-- Compiler-style pragmatic FP scaffold.
-- Purpose: ADT-heavy and pattern-match-oriented generator architecture between Haskell purity and pragmatic systems work.
-- Program category: correctness, ecosystem reach
+- Deterministic full-parity target for the next-20 wave.
+- First tranche target is `classic-six + modern-core` with grouped fallback for later families.
+- Full live-provider/runtime support remains a required follow-on wave.
 
 ## Planned toolchain contract
-- `ocamlformat --check .`
-- `dune build`
-- `dune runtest`
+- Toolchain source: `built-in`
+- See [docs/toolchain.md](docs/toolchain.md) for exact prep commands.
 
 ## Current guardrail
-- This repo is intentionally limited to scaffold readiness. Real implementation depth begins only after promotion from the wider matrix queue.
+- Missing behavior must fail fast and be recorded in `GAPS.md`.
+- The scaffold baseline is authoritative until implementation starts.
+- Use opam-managed tooling; ocamlformat is available via opam exec.
 
 ## Documentation
-- [AI disclosure](AI_DISCLOSURE.md)
-- [Parity](PARITY.md)
-- [Explicit gaps](GAPS.md)
-- [Remotes](docs/remotes.md)
-- [Provenance](docs/provenance.md)
-- [Toolchain](docs/toolchain.md)
+- [STATUS.md](STATUS.md)
+- [PARITY.md](PARITY.md)
+- [GAPS.md](GAPS.md)
+- [docs/remotes.md](docs/remotes.md)
+- [docs/provenance.md](docs/provenance.md)
+- [docs/toolchain.md](docs/toolchain.md)
+- [docs/traceability/first-push-families.md](docs/traceability/first-push-families.md)
