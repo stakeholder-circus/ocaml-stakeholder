@@ -11,7 +11,7 @@ jobs:
   smoke:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - run: docker build -t ocaml-stakeholder .
       - run: docker run --rm ocaml-stakeholder --list-values
       - run: docker run --rm ocaml-stakeholder --seed 7 --family classic-six
